@@ -200,8 +200,12 @@ const Home = () => {
         <div className="container mx-auto px-4 text-center relative z-10">
           {/* Profile Section */}
           <div className="mb-8 animate-fade-in">
-            <div className="w-32 h-32 mx-auto mb-6 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center text-4xl font-bold text-white shadow-2xl">
-              ZE
+            <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden shadow-2xl border-4 border-blue-400">
+              <img 
+                src="/lovable-uploads/b4b6eadd-d88a-4653-8c5e-2f4b54d09fbf.png" 
+                alt="Zeyad Elmaghraby" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
 

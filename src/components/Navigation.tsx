@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,9 +31,15 @@ export const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           <button 
             onClick={() => scrollToSection('home')}
-            className="text-2xl font-bold text-blue-400 hover:text-blue-300 transition-colors"
+            className="flex items-center gap-3 hover:opacity-80 transition-opacity"
           >
-            ZE
+            <Avatar className="w-10 h-10">
+              <AvatarImage src="/lovable-uploads/b4b6eadd-d88a-4653-8c5e-2f4b54d09fbf.png" alt="Zeyad Elmaghraby" />
+              <AvatarFallback className="bg-blue-600 text-white font-bold">ZE</AvatarFallback>
+            </Avatar>
+            <span className="text-xl font-bold text-blue-400 hover:text-blue-300 transition-colors">
+              Zeyad Elmaghraby
+            </span>
           </button>
 
           {/* Desktop Navigation */}
