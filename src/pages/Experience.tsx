@@ -38,61 +38,51 @@ const Experience = () => {
             </p>
           </div>
 
-          {/* Timeline */}
+          {/* Experience Card - Full Width */}
           <div className="relative">
-            {/* Timeline line */}
-            <div className="absolute left-8 md:left-1/2 transform md:-translate-x-px h-full w-0.5 bg-blue-500"></div>
-
             {experiences.map((exp, index) => (
-              <div key={index} className="relative mb-12 flex">
-                {/* Timeline dot */}
-                <div className="absolute left-6 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full border-4 border-slate-900 z-10"></div>
-                
-                <Card className={`ml-16 md:ml-0 w-full ${
-                  index % 2 === 0 
-                    ? 'md:w-1/2 md:mr-8 md:ml-0' 
-                    : 'md:w-1/2 md:ml-auto md:pl-8'
-                } bg-slate-800 border-slate-700 hover:border-blue-500 transition-all duration-300 hover:scale-105`}>
-                  <CardContent className="p-6 text-left">
-                    <div className="flex flex-wrap items-center gap-2 mb-3">
-                      <Building className="w-4 h-4 text-blue-400" />
-                      <span className="text-blue-400 font-semibold">{exp.company}</span>
+              <div key={index} className="relative mb-12">
+                <Card className="w-full max-w-5xl mx-auto bg-slate-800 border-slate-700 hover:border-blue-500 transition-all duration-300 hover:scale-105">
+                  <CardContent className="p-8 text-left">
+                    <div className="flex flex-wrap items-center gap-2 mb-4">
+                      <Building className="w-5 h-5 text-blue-400" />
+                      <span className="text-blue-400 font-semibold text-lg">{exp.company}</span>
                       <span className="text-slate-400">•</span>
-                      <span className="text-slate-400 text-sm">{exp.type}</span>
+                      <span className="text-slate-400">{exp.type}</span>
                     </div>
                     
-                    <h3 className="text-xl font-bold text-white mb-2 text-left">{exp.position}</h3>
+                    <h3 className="text-2xl font-bold text-white mb-3 text-left">{exp.position}</h3>
                     
-                    <div className="flex flex-wrap items-center gap-4 mb-4 text-sm text-slate-400">
-                      <div className="flex items-center gap-1">
+                    <div className="flex flex-wrap items-center gap-4 mb-6 text-slate-400">
+                      <div className="flex items-center gap-2">
                         <Calendar className="w-4 h-4" />
                         {exp.period}
                       </div>
-                      <div className="flex items-center gap-1">
+                      <div className="flex items-center gap-2">
                         <MapPin className="w-4 h-4" />
                         {exp.location}
                       </div>
                     </div>
                     
-                    <p className="text-slate-300 mb-4 leading-relaxed text-left">{exp.description}</p>
+                    <p className="text-slate-300 mb-6 leading-relaxed text-left text-lg">{exp.description}</p>
                     
-                    <div className="mb-4">
-                      <h4 className="text-white font-semibold mb-2 text-left">Key Achievements:</h4>
-                      <ul className="space-y-1">
+                    <div className="mb-6">
+                      <h4 className="text-white font-semibold mb-3 text-left text-lg">Key Achievements:</h4>
+                      <div className="grid md:grid-cols-2 gap-3">
                         {exp.achievements.map((achievement, idx) => (
-                          <li key={idx} className="text-slate-300 text-sm flex items-start gap-2 text-left">
-                            <span className="text-blue-400 mt-1.5 w-1 h-1 rounded-full bg-blue-400 flex-shrink-0"></span>
+                          <li key={idx} className="text-slate-300 flex items-start gap-3 text-left">
+                            <span className="text-blue-400 mt-2 w-2 h-2 rounded-full bg-blue-400 flex-shrink-0"></span>
                             {achievement}
                           </li>
                         ))}
-                      </ul>
+                      </div>
                     </div>
                     
                     <div>
-                      <h4 className="text-white font-semibold mb-2 text-left">Technologies:</h4>
+                      <h4 className="text-white font-semibold mb-3 text-left text-lg">Technologies:</h4>
                       <div className="flex flex-wrap gap-2">
                         {exp.technologies.map((tech) => (
-                          <span key={tech} className="bg-blue-600/20 text-blue-300 px-2 py-1 rounded text-xs font-medium">
+                          <span key={tech} className="bg-blue-600/20 text-blue-300 px-3 py-1.5 rounded text-sm font-medium">
                             {tech}
                           </span>
                         ))}
