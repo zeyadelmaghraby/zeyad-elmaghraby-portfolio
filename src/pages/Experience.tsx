@@ -5,135 +5,49 @@ import { Calendar, MapPin, Building } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
-      company: "Diriyah Gate Development Authority (DGDA)",
-      position: "Senior SharePoint Developer & Team Lead",
-      period: "March 2022 - Present",
+      company: "EJADA Systems",
+      position: "Senior .NET Developer & Team Lead",
+      period: "2020 - Present",
       location: "Saudi Arabia",
-      type: "Contract via EJADA Systems",
-      description: "Managing and maintaining five SharePoint On-Premise 2019 systems while leading a development team and implementing complex solutions.",
+      type: "Full-time",
+      description: "Lead development of enterprise portals and internal systems for government and private sector clients.",
       achievements: [
-        "Led a team of developers, responsible for assigning tasks, reviewing code, and evaluating performance",
-        "Managed and maintained five SharePoint On-Premise 2019 systems with new feature implementations",
-        "Developed Internal Portal product on SharePoint Online using ReactJS custom solutions",
-        "Implemented integration layers with third-party vendors for registration processes and two-factor authentication",
-        "Designed and executed unit, client and full cycle testing strategies",
-        "Provided L3 Support for production issues",
-        "Developed complex applications using Power Apps and Power Automate for workflow automation",
-        "Leveraged Azure services including App Service, Functions, and Cognitive Services",
-        "Managed SharePoint 2019 farms installation and administration tasks",
-        "Prepared comprehensive technical design documents"
+        "Led a team of 5 developers in delivering mission-critical SharePoint solutions",
+        "Implemented Azure DevOps CI/CD pipelines reducing deployment time by 70%",
+        "Architected and developed scalable web portals serving 10,000+ concurrent users",
+        "Established code review processes and technical documentation standards"
       ],
-      technologies: [".NET Framework", "C#", "JavaScript", "ReactJS", "SharePoint 2019", "SharePoint Online", "NINTEX WF", "Power Apps", "Power Automate", "Azure Services", "SQL", "REST API", "SOAP"]
+      technologies: ["SharePoint Online", "ReactJS", ".NET Core", "Azure DevOps", "Power Platform"]
     },
     {
       company: "STCPay",
       position: "Senior Software Developer",
-      period: "January 2020 - February 2022",
+      period: "2018 - 2020",
       location: "Saudi Arabia",
       type: "Full-time",
-      description: "Developed core banking integration systems and payment processing solutions for STCPay mobile and web channels.",
+      description: "Developed core banking integration systems and payment processing solutions.",
       achievements: [
-        "Built Core Banking Services and Integration layers for STCPay Channels (Mobile App, Employee Portal, Merchant Portal)",
-        "Implemented Integration Layers with third parties including government agencies and banks",
-        "Designed comprehensive unit, client and full cycle testing frameworks",
-        "Provided L3 Support for production issues",
-        "Developed, tested and deployed scalable solutions and services",
-        "Implemented robust caching and logging mechanisms"
+        "Built REST APIs handling 100,000+ daily transactions",
+        "Integrated with multiple third-party banking services and payment gateways",
+        "Implemented security compliance measures for financial transactions",
+        "Optimized database queries reducing response time by 50%"
       ],
-      technologies: [".NET Framework", "C#", "Web Services", "LINQ", "Windows Services", "SQL", "Stored Procedures", "Caching", "Logging", "GIT", "TFS", "REST API", "SOAP", "GitLab"]
+      technologies: [".NET Framework", "REST APIs", "SQL Server", "Banking Integration", "Security Protocols"]
     },
     {
-      company: "Saudi Ministry of Energy Portal",
-      position: "SharePoint Developer",
-      period: "April 2019 - December 2019",
+      company: "Saudi Ministry of Energy",
+      position: ".NET Developer",
+      period: "2017 - 2018",
       location: "Saudi Arabia",
-      type: "Contract via EJADA Systems",
-      description: "Developed government portal using SharePoint 2016 On-premises for the Saudi Ministry of Energy.",
+      type: "Contract",
+      description: "Developed and maintained SharePoint 2016 portal for internal document management.",
       achievements: [
-        "Participated in developing comprehensive Saudi Ministry of Energy portal using SharePoint 2016",
-        "Created robust data model for the project architecture",
-        "Implemented web services for database integration and data retrieval",
-        "Coordinated with Integration and Database teams for seamless communication",
-        "Generated unit testing scenarios and conducted full cycle testing",
-        "Provided ongoing support for production issues"
+        "Migrated legacy systems to SharePoint 2016 platform",
+        "Developed custom web parts and workflows using C#",
+        "Implemented document approval workflows for regulatory compliance",
+        "Trained internal staff on portal usage and administration"
       ],
-      technologies: ["SharePoint 2016", "ASP.NET", "C#", "JavaScript", "jQuery", "SOAP UI"]
-    },
-    {
-      company: "Saudi Electricity Contractor Portal",
-      position: "SharePoint Developer",
-      period: "January 2019 - March 2019",
-      location: "Saudi Arabia",
-      type: "Contract via EJADA Systems",
-      description: "Developed contractor management portal for Saudi Electricity Company with workflow automation and reporting capabilities.",
-      achievements: [
-        "Developed Saudi Electricity Contractor portal using SharePoint 2016 and NINTEX WF for project workflow management",
-        "Built multiple integration services with different Saudi Electricity internal systems",
-        "Generated comprehensive reports using SAP Crystal Reports",
-        "Created interactive dashboards using Power BI for data visualization"
-      ],
-      technologies: ["SharePoint 2016", "ASP.NET", "C#", "NINTEX Workflow", "JavaScript", "CAML Query", "Power BI", "Crystal Reports"]
-    },
-    {
-      company: "Saudi Air Navigation System",
-      position: "SharePoint Developer",
-      period: "October 2018 - December 2018",
-      location: "Saudi Arabia",
-      type: "Contract via EJADA Systems",
-      description: "Created official website for Saudi Air Navigation System using SharePoint 2016.",
-      achievements: [
-        "Developed Saudi Air Navigation System official website using SharePoint 2016",
-        "Provided ongoing technical support and issue resolution for the website"
-      ],
-      technologies: ["SharePoint 2016", "ASP.NET", "C#", "JavaScript", "jQuery"]
-    },
-    {
-      company: "NCB Capital",
-      position: "SharePoint Developer",
-      period: "August 2018 - October 2018",
-      location: "Saudi Arabia",
-      type: "Contract via EJADA Systems",
-      description: "Upgraded NCB Capital (Idikhar) platform from SharePoint 2010 to SharePoint 2013 with enhanced features.",
-      achievements: [
-        "Collaborated with offshore team from Egypt to upgrade NCB Capital (Idikhar) from SharePoint 2010 to 2013",
-        "Updated complete theme and website structure for improved user experience",
-        "Implemented form-based authentication mechanism for external users"
-      ],
-      technologies: ["SharePoint 2013", "ASP.NET", "C#", "JavaScript"]
-    },
-    {
-      company: "DDS Program for Saudi Air Navigation System",
-      position: "SharePoint Developer",
-      period: "June 2018 - August 2018",
-      location: "Saudi Arabia",
-      type: "Contract via EJADA Systems",
-      description: "Developed comprehensive meeting tracking and KPI management system for Saudi Air Navigation System departments.",
-      achievements: [
-        "Implemented DDS program from scratch for Saudi Air Navigation System departments",
-        "Created meeting tracking system with various filters (Daily, Weekly, Monthly)",
-        "Developed attendance tracking and KPI monitoring for employees in each department",
-        "Gathered and analyzed requirements from business users across multiple departments",
-        "Independently developed the entire project from conception to deployment"
-      ],
-      technologies: ["SharePoint Online", "JavaScript", "jQuery", "HTML"]
-    },
-    {
-      company: "Saudi Telecom Company Specialized (STCSC)",
-      position: "SharePoint Developer",
-      period: "October 2017 - June 2018",
-      location: "Saudi Arabia",
-      type: "Contract via EJADA Systems",
-      description: "Developed comprehensive internal portal and POS system for Saudi Telecom Company with extensive workflow automation.",
-      achievements: [
-        "Collaborated with offshore team to develop STC's internal portal using SharePoint 2016 On-premises",
-        "Designed and implemented 50+ workflow automation processes using SharePoint Workflow engine",
-        "Worked with Corporate Communication to ensure UI/UX compliance with branding standards",
-        "Created complete POS system from scratch for STC stores transaction management",
-        "Generated POS invoices using SAP Crystal Reports",
-        "Implemented web service integration with STC CRM system for agent information retrieval",
-        "Conducted training sessions for IT department and business users on portal usage"
-      ],
-      technologies: ["SharePoint 2016", "ASP.NET", "C#", "JavaScript", "jQuery", "CAML Query", "SharePoint Designer", "Crystal Reports"]
+      technologies: ["SharePoint 2016", "C#", "SQL Server", "Workflows", "Custom Web Parts"]
     },
     {
       company: "DGDA (General Directorate of Drugs Affairs)",
