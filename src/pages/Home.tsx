@@ -68,7 +68,7 @@ const Home = () => {
         <div className="container mx-auto px-4 py-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div>
-              <div className="text-3xl font-bold text-blue-400 mb-2">7+</div>
+              <div className="text-3xl font-bold text-blue-400 mb-2">8+</div>
               <div className="text-slate-300">Years Experience</div>
             </div>
             <div>

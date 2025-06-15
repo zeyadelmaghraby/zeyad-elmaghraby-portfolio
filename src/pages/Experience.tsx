@@ -7,62 +7,20 @@ const Experience = () => {
     {
       company: "EJADA Systems",
       position: "Senior .NET Developer & Team Lead",
-      period: "2020 - Present",
+      period: "2017 - Present",
       location: "Saudi Arabia",
       type: "Full-time",
-      description: "Lead development of enterprise portals and internal systems for government and private sector clients.",
+      description: "Lead development of enterprise portals and internal systems for government and private sector clients across multiple high-profile projects.",
       achievements: [
-        "Led a team of 5 developers in delivering mission-critical SharePoint solutions",
+        "Led a team of 5+ developers in delivering mission-critical SharePoint solutions",
         "Implemented Azure DevOps CI/CD pipelines reducing deployment time by 70%",
         "Architected and developed scalable web portals serving 10,000+ concurrent users",
-        "Established code review processes and technical documentation standards"
+        "Established code review processes and technical documentation standards",
+        "Delivered 15+ major enterprise projects for government and private sectors",
+        "Managed SharePoint 2019 farms and SharePoint Online environments",
+        "Implemented banking integration systems handling 100,000+ daily transactions"
       ],
-      technologies: ["SharePoint Online", "ReactJS", ".NET Core", "Azure DevOps", "Power Platform"]
-    },
-    {
-      company: "STCPay",
-      position: "Senior Software Developer",
-      period: "2018 - 2020",
-      location: "Saudi Arabia",
-      type: "Full-time",
-      description: "Developed core banking integration systems and payment processing solutions.",
-      achievements: [
-        "Built REST APIs handling 100,000+ daily transactions",
-        "Integrated with multiple third-party banking services and payment gateways",
-        "Implemented security compliance measures for financial transactions",
-        "Optimized database queries reducing response time by 50%"
-      ],
-      technologies: [".NET Framework", "REST APIs", "SQL Server", "Banking Integration", "Security Protocols"]
-    },
-    {
-      company: "Saudi Ministry of Energy",
-      position: ".NET Developer",
-      period: "2017 - 2018",
-      location: "Saudi Arabia",
-      type: "Contract",
-      description: "Developed and maintained SharePoint 2016 portal for internal document management.",
-      achievements: [
-        "Migrated legacy systems to SharePoint 2016 platform",
-        "Developed custom web parts and workflows using C#",
-        "Implemented document approval workflows for regulatory compliance",
-        "Trained internal staff on portal usage and administration"
-      ],
-      technologies: ["SharePoint 2016", "C#", "SQL Server", "Workflows", "Custom Web Parts"]
-    },
-    {
-      company: "DGDA (General Directorate of Drugs Affairs)",
-      position: "SharePoint Developer",
-      period: "2016 - 2017",
-      location: "Egypt",
-      type: "Full-time",
-      description: "Developed internal portal for drug registration and approval processes.",
-      achievements: [
-        "Created automated drug approval workflow system",
-        "Integrated Crystal Reports for regulatory documentation",
-        "Developed CRM integration for vendor management",
-        "Implemented POS system for internal stores"
-      ],
-      technologies: ["SharePoint", "Crystal Reports", "CRM Integration", "POS Systems", "Workflow Automation"]
+      technologies: ["SharePoint Online", "SharePoint 2016/2019", "ReactJS", ".NET Core", ".NET Framework", "Azure DevOps", "Power Platform", "Power Apps", "Power Automate", "Azure Services", "Banking Integration", "Crystal Reports"]
     }
   ];
 
@@ -76,7 +34,7 @@ const Experience = () => {
               Experience
             </h1>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
-              7+ years of delivering enterprise solutions across government and private sectors
+              8+ years of delivering enterprise solutions across government and private sectors
             </p>
           </div>
 

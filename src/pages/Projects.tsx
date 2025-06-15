@@ -1,3 +1,4 @@
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github, Image } from "lucide-react";
@@ -5,69 +6,117 @@ import { ExternalLink, Github, Image } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "DGDA Internal Portal",
-      description: "Comprehensive internal portal for the General Directorate of Drugs Affairs, streamlining drug registration and approval processes with automated workflows.",
-      technologies: ["SharePoint Online", "ReactJS", "Power Automate", "Power BI", "Azure"],
+      title: "Diriyah Gate Development Authority (DGDA)",
+      company: "EJADA Systems",
+      period: "March 2022",
+      description: "Comprehensive SharePoint management and development project involving five SharePoint On-Premise 2019 systems and SharePoint Online solutions.",
+      technologies: [".NET Framework", "C#", "JavaScript", "ReactJS", "SharePoint 2019", "SharePoint Online", "Power Apps", "Power Automate", "Azure Services", "REST API", "SOAP"],
       responsibilities: [
-        "Led full-stack development using SharePoint Online and ReactJS",
-        "Implemented automated approval workflows reducing processing time by 60%",
-        "Integrated Power BI dashboards for real-time analytics",
-        "Ensured regulatory compliance and security standards"
+        "Managing and maintaining five SharePoint On-Premise 2019 systems",
+        "Developing backend and frontend layers using .NET Framework and JavaScript",
+        "Managing Internal Portal product on SharePoint Online using ReactJS",
+        "Implementing integration layers with third-party vendors and two-factor authentication",
+        "Leading team of developers and preparing technical design documents",
+        "Utilizing Azure services for application enhancements"
       ],
-      image: "photo-1461749280684-dccba630e2f6",
       featured: true
     },
     {
       title: "STCPay Core Banking Integration",
-      description: "Mission-critical banking integration system handling thousands of daily transactions with multiple payment gateways and financial institutions.",
-      technologies: [".NET Framework", "REST APIs", "SQL Server", "Banking APIs", "Security Protocols"],
+      company: "EJADA Systems",
+      period: "January 2020 - February 2022",
+      description: "Mission-critical banking integration system for STCPay channels including Mobile App, Employee Portal and Merchant Portal.",
+      technologies: [".NET Framework", "C#", "Web Services", "LINQ", "Windows Services", "SQL", "REST API", "SOAP", "GIT", "TFS", "GitLab"],
       responsibilities: [
-        "Architected and developed REST APIs for banking transactions",
-        "Implemented security protocols for financial data protection",
-        "Integrated with multiple third-party banking services",
-        "Optimized performance for high-volume transaction processing"
+        "Developed Core Banking Services and Integration layers for STCPay Channels",
+        "Implemented Integration Layers with third parties (Government agencies and Banks)",
+        "Designed unit, client and full cycle testing",
+        "Provided L3 Support for production issues"
       ],
-      image: "photo-1486312338219-ce68d2c6f44d",
       featured: true
     },
     {
       title: "Saudi Ministry of Energy Portal",
-      description: "Enterprise document management portal for the Ministry of Energy, facilitating regulatory compliance and internal document workflows.",
-      technologies: ["SharePoint 2016", "C#", "SQL Server", "Custom Web Parts", "Workflows"],
+      company: "EJADA Systems",
+      period: "April 2019 - December 2019",
+      description: "Enterprise portal development using Microsoft SharePoint 2016 On-premises for the Saudi Ministry of Energy.",
+      technologies: ["SharePoint 2016", "ASP.NET", "C#", "JavaScript", "jQuery", "SOAP UI"],
       responsibilities: [
-        "Migrated legacy systems to SharePoint 2016 platform",
-        "Developed custom web parts and automation workflows",
-        "Implemented document approval processes for compliance",
-        "Provided training and technical documentation"
+        "Participated in developing Saudi Ministry of Energy portal",
+        "Created data model for the project",
+        "Implemented web services for database integration",
+        "Handled communication with Integration and Database teams"
       ],
-      image: "photo-1498050108023-c5249f4df085",
       featured: false
     },
     {
-      title: "POS System for STC Stores",
-      description: "Point-of-sale system integrated with CRM for STC retail stores, featuring real-time inventory management and comprehensive reporting.",
-      technologies: ["C#", "CRM Integration", "Crystal Reports", "SQL Server", "WinForms"],
+      title: "Saudi Electricity Contractor Portal",
+      company: "EJADA Systems",
+      period: "January 2019 - March 2019",
+      description: "SharePoint portal for handling contractors project workflow with advanced reporting and dashboard capabilities.",
+      technologies: ["SharePoint 2016", "ASP.NET", "C#", "NINTEX Workflow", "JavaScript", "CAML Query", "Power BI", "Crystal Reports"],
       responsibilities: [
-        "Developed desktop POS application using C# and WinForms",
-        "Integrated with existing CRM system for customer management",
-        "Created comprehensive reporting system using Crystal Reports",
-        "Implemented real-time inventory tracking and management"
+        "Developed contractor portal with workflow management using SharePoint 2016 and NINTEX",
+        "Built integration services with Saudi Electricity internal systems",
+        "Generated reports using SAP Crystal Reports",
+        "Created dashboards using Power BI"
       ],
-      image: "photo-1487058792275-0ad4aaf24ca7",
       featured: false
     },
     {
-      title: "ECG-based Biometric Recognition",
-      description: "Innovative bachelor's degree project combining C# and MATLAB for ECG signal processing and biometric identification using advanced algorithms.",
-      technologies: ["C#", "MATLAB", "Signal Processing", "Machine Learning", "Biometrics"],
+      title: "Saudi Air Navigation System",
+      company: "EJADA Systems",
+      period: "October 2018 - December 2018",
+      description: "Official website development for Saudi Air Navigation System using Microsoft SharePoint 2016.",
+      technologies: ["SharePoint 2016", "ASP.NET", "C#", "JavaScript", "jQuery"],
       responsibilities: [
-        "Developed ECG signal processing algorithms in MATLAB",
-        "Created C# application for real-time biometric recognition",
-        "Implemented machine learning models for pattern recognition",
-        "Achieved 95% accuracy in biometric identification"
+        "Participated in creating Saudi Air Navigation System official website",
+        "Provided ongoing support and issue resolution"
       ],
-      image: "photo-1487958449943-2429e8be8625",
       featured: false
+    },
+    {
+      title: "NCB Capital (Idikhar) Upgrade",
+      company: "EJADA Systems",
+      period: "August 2018 - October 2018",
+      description: "Major SharePoint upgrade project from SharePoint 2010 to SharePoint 2013 with enhanced authentication.",
+      technologies: ["SharePoint 2013", "ASP.NET", "C#", "JavaScript"],
+      responsibilities: [
+        "Worked with offshore team to upgrade from SharePoint 2010 to 2013",
+        "Updated theme and website structure",
+        "Implemented form-based authentication for external users"
+      ],
+      featured: false
+    },
+    {
+      title: "DDS Program for Saudi Air Navigation",
+      company: "EJADA Systems",
+      period: "June 2018 - August 2018",
+      description: "Custom tracking system for meetings, attendance, and KPIs across multiple departments.",
+      technologies: ["SharePoint Online", "JavaScript", "jQuery", "HTML"],
+      responsibilities: [
+        "Implemented DDS program from scratch",
+        "Created meeting tracking system with various filters (Daily, Weekly, Monthly)",
+        "Developed attendance and KPI tracking for employees",
+        "Gathered requirements from business users across departments"
+      ],
+      featured: false
+    },
+    {
+      title: "Saudi Telecom Company (STCSC) Internal Portal",
+      company: "EJADA Systems",
+      period: "October 2017 - June 2018",
+      description: "Comprehensive internal portal with workflow automation and POS system integration.",
+      technologies: ["SharePoint 2016", "ASP.NET", "C#", "JavaScript", "jQuery", "CAML Query", "SharePoint Designer", "Crystal Reports"],
+      responsibilities: [
+        "Developed STC internal portal using SharePoint 2016 On-premises",
+        "Designed and implemented 50+ workflow automation processes",
+        "Created POS system from scratch for STC stores",
+        "Generated POS invoices using SAP Crystal Reports",
+        "Implemented web service integration with STC CRM system",
+        "Provided training sessions to IT department and business users"
+      ],
+      featured: true
     }
   ];
 
@@ -81,7 +130,7 @@ const Projects = () => {
               Projects
             </h1>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
-              Showcase of enterprise solutions and innovative projects delivered across various domains
+              Showcase of enterprise solutions delivered across government and private sectors
             </p>
           </div>
 
@@ -96,6 +145,11 @@ const Projects = () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-800/80 to-transparent"></div>
                   </div>
                   <CardContent className="p-6">
+                    <div className="flex flex-wrap items-center gap-2 mb-2">
+                      <span className="text-blue-400 font-semibold text-sm">{project.company}</span>
+                      <span className="text-slate-400">•</span>
+                      <span className="text-slate-400 text-sm">{project.period}</span>
+                    </div>
                     <h3 className="text-2xl font-bold text-white mb-3">{project.title}</h3>
                     <p className="text-slate-300 mb-4 leading-relaxed">{project.description}</p>
                     
@@ -113,11 +167,16 @@ const Projects = () => {
                     
                     <div className="mb-6">
                       <div className="flex flex-wrap gap-2">
-                        {project.technologies.map((tech) => (
+                        {project.technologies.slice(0, 6).map((tech) => (
                           <span key={tech} className="bg-blue-600/20 text-blue-300 px-2 py-1 rounded text-xs font-medium">
                             {tech}
                           </span>
                         ))}
+                        {project.technologies.length > 6 && (
+                          <span className="text-slate-400 text-xs px-2 py-1">
+                            +{project.technologies.length - 6} more
+                          </span>
+                        )}
                       </div>
                     </div>
                     
@@ -125,10 +184,6 @@ const Projects = () => {
                       <Button size="sm" className="bg-blue-600 hover:bg-blue-700">
                         <ExternalLink className="w-4 h-4 mr-1" />
                         View Details
-                      </Button>
-                      <Button size="sm" variant="outline" className="border-slate-600 text-slate-300 hover:bg-slate-700">
-                        <Github className="w-4 h-4 mr-1" />
-                        Code
                       </Button>
                     </div>
                   </CardContent>
@@ -146,6 +201,12 @@ const Projects = () => {
                   <CardContent className="p-6">
                     <div className="h-32 bg-slate-700 rounded-lg mb-4 flex items-center justify-center">
                       <Image className="w-12 h-12 text-slate-500" />
+                    </div>
+                    
+                    <div className="flex flex-wrap items-center gap-2 mb-2">
+                      <span className="text-blue-400 font-semibold text-xs">{project.company}</span>
+                      <span className="text-slate-400">•</span>
+                      <span className="text-slate-400 text-xs">{project.period}</span>
                     </div>
                     
                     <h3 className="text-xl font-bold text-white mb-2">{project.title}</h3>
