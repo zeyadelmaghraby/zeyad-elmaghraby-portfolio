@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowDown, Download, Mail, Calendar, MapPin, Building, Award, Code, Database, Cloud, Monitor, Smartphone, Globe, Phone, Linkedin, GraduationCap, Users, Briefcase } from "lucide-react";
 
 const Home = () => {
+  const profileImage = `${import.meta.env.BASE_URL}profile.png`;
   const experiences = [
     {
       company: "EJADA Systems",
@@ -225,7 +226,7 @@ const Home = () => {
           <div className="mb-6 animate-fade-in">
             <div className="w-28 h-28 md:w-32 md:h-32 mx-auto mb-4 rounded-full overflow-hidden shadow-2xl border-4 border-blue-400">
               <img 
-                src="/profile.png" 
+                src={profileImage} 
                 alt="Zeyad Elmaghraby" 
                 className="w-full h-full object-cover"
               />

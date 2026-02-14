@@ -6,6 +6,7 @@ import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const profileImage = `${import.meta.env.BASE_URL}profile.png`;
 
   const navItems = [
     { name: "Home", section: "home" },
@@ -34,7 +35,7 @@ export const Navigation = () => {
             className="flex items-center gap-3 hover:opacity-80 transition-opacity"
           >
             <Avatar className="w-10 h-10">
-              <AvatarImage src="/profile.png" alt="Zeyad Elmaghraby" />
+              <AvatarImage src={profileImage} alt="Zeyad Elmaghraby" />
               <AvatarFallback className="bg-blue-600 text-white font-bold">ZE</AvatarFallback>
             </Avatar>
             <span className="text-xl font-bold text-blue-400 hover:text-blue-300 transition-colors">
