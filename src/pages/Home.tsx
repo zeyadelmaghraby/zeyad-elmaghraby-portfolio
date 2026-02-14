@@ -76,6 +76,32 @@ const Home = () => {
 
   const selectedProjects = [
     {
+      title: "EJADA Systems – Diriyah Gate Development Authority",
+      period: "Mar 2022 – Mar 2024",
+      role: "Technical Lead / Senior SharePoint Developer",
+      description: "Delivered SharePoint platforms serving 5,000+ users with role-based access and governance controls for the cultural heritage development authority.",
+      achievements: [
+        "Delivered SharePoint platforms serving 5,000+ users with role-based access",
+        "Automated 20+ business workflows using Power Automate and Power Apps",
+        "Improved content publishing efficiency by 35% through centralized CMS",
+        "Managed and maintained five SharePoint On-Premise 2019 systems"
+      ],
+      technologies: [".NET Framework", "C#", "ReactJS", "SharePoint 2019", "SharePoint Online", "Power Apps", "Power Automate", "Azure Services"]
+    },
+    {
+      title: "STCPay (via EJADA Systems)",
+      period: "Jan 2020 – Feb 2022",
+      role: "Senior Software Engineer",
+      description: "Led development of core banking REST APIs serving mobile apps and merchant portals for STCPay's multi-channel platform serving 8M+ users.",
+      achievements: [
+        "Led development of core banking REST APIs serving mobile apps and merchant portals",
+        "Designed and optimized SQL Server databases and stored procedures",
+        "Implemented business logic using CSLA .NET framework",
+        "Managed integrations with governmental entities ensuring secure data exchange"
+      ],
+      technologies: [".NET Framework", "C#", "SQL Server", "REST API", "SOAP", "CSLA Framework"]
+    },
+    {
       title: "WCA34 – SharePoint Online Modern Intranet Portal",
       period: "Oct 2025 – Feb 2026",
       role: "Technical Team Lead",
@@ -290,7 +316,7 @@ const Home = () => {
                 asChild
                 className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 text-base font-semibold rounded-lg transition-all duration-300 hover:scale-105 shadow-lg"
               >
-                <a href="https://linkedin.com/in/zeyad-elmaghraby" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/zeyad-elmaghraby-068567b2/" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="mr-2" size={18} />
                   LinkedIn Profile
                 </a>
@@ -330,7 +356,7 @@ const Home = () => {
                 <div className="text-xs md:text-sm text-slate-300">Microsoft Certifications</div>
               </div>
               <div>
-                <div className="text-2xl md:text-3xl font-bold text-blue-400 mb-1">5000+</div>
+                <div className="text-2xl md:text-3xl font-bold text-blue-400 mb-1">8M+</div>
                 <div className="text-xs md:text-sm text-slate-300">Users Served</div>
               </div>
             </div>
@@ -391,8 +417,8 @@ const Home = () => {
               <h2 className="text-3xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-white to-blue-300 bg-clip-text text-transparent">
                 Experience
               </h2>
-              <p className="text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed">
-                8+ years at EJADA Systems delivering enterprise solutions across government and private sectors
+              <p className="text-xl md:text-2xl text-blue-300 font-semibold max-w-3xl mx-auto leading-relaxed">
+                Technical Team Lead | Microsoft 365 & Enterprise Solutions Architect
               </p>
             </div>
 
