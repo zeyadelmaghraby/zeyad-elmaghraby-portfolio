@@ -126,16 +126,16 @@ const Home = () => {
       { name: "Hub Sites & Information Architecture", level: 90 },
     ],
     "Power Platform": [
-      { name: "Power Apps", level: 90 },
+      { name: "Power Apps", level: 80 },
       { name: "Power Automate", level: 90 },
       { name: "Power BI", level: 85 },
       { name: "Microsoft 365 Integration", level: 90 },
     ],
     "Backend Development": [
-      { name: ".NET Core / .NET Framework", level: 95 },
-      { name: "C#", level: 95 },
+      { name: ".NET Core / .NET Framework", level: 85 },
+      { name: "C#", level: 85 },
       { name: "REST APIs", level: 90 },
-      { name: "CSLA Framework", level: 85 },
+      { name: "CSLA Framework", level: 90 },
     ],
     "Database & Data": [
       { name: "SQL Server", level: 90 },
@@ -150,7 +150,7 @@ const Home = () => {
       { name: "JIRA", level: 80 },
     ],
     "Leadership & Presales": [
-      { name: "Technical Leadership", level: 95 },
+      { name: "Technical Leadership", level: 90 },
       { name: "Team Mentoring", level: 90 },
       { name: "Solution Architecture", level: 90 },
       { name: "RFP Analysis & Proposals", level: 85 },
