@@ -22,85 +22,10 @@ const Home = () => {
         "Participated in presales: RFP analysis, technical writeups, proposal preparation"
       ],
       technologies: ["SharePoint Online", "SPFx (React)", "Power Apps", "Power Automate", "Power BI", "Azure DevOps", ".NET Core", "Hub Sites", "Fluent UI"]
-    },
-    {
-      company: "EJADA Systems – Diriyah Gate Development Authority",
-      position: "Technical Lead / Senior SharePoint Developer",
-      period: "Mar 2022 – Mar 2024",
-      location: "Saudi Arabia",
-      type: "Full-time",
-      description: "Delivered SharePoint platforms serving 5,000+ users with role-based access and governance controls for the cultural heritage development authority.",
-      achievements: [
-        "Delivered SharePoint platforms serving 5,000+ users with role-based access",
-        "Automated 20+ business workflows using Power Automate and Power Apps",
-        "Improved content publishing efficiency by 35% through centralized CMS",
-        "Managed and maintained five SharePoint On-Premise 2019 systems",
-        "Implemented integration layers with third-party vendors",
-        "Led team of developers with code review and performance evaluation"
-      ],
-      technologies: [".NET Framework", "C#", "JavaScript", "ReactJS", "SharePoint 2019", "SharePoint Online", "Power Apps", "Power Automate", "Azure Services", "REST API"]
-    },
-    {
-      company: "STCPay (via EJADA Systems)",
-      position: "Senior Software Engineer",
-      period: "Jan 2020 – Feb 2022",
-      location: "Saudi Arabia",
-      type: "Full-time",
-      description: "Led development of core banking REST APIs serving mobile apps and merchant portals for STCPay's multi-channel platform.",
-      achievements: [
-        "Led development of core banking REST APIs serving mobile apps and merchant portals",
-        "Designed and optimized SQL Server databases and stored procedures",
-        "Implemented business logic using CSLA .NET framework",
-        "Managed integrations with governmental entities ensuring secure data exchange",
-        "Conducted code reviews and improved delivery efficiency"
-      ],
-      technologies: [".NET Framework", "C#", "Web Services", "LINQ", "SQL Server", "REST API", "SOAP", "CSLA Framework"]
-    },
-    {
-      company: "EJADA Systems",
-      position: "SharePoint Developer",
-      period: "Oct 2017 – Dec 2019",
-      location: "Saudi Arabia",
-      type: "Full-time",
-      description: "Developed SharePoint portals and business process automation solutions for major government and enterprise clients.",
-      achievements: [
-        "Saudi Ministry of Energy: SharePoint 2016 portal with NINTEX workflows",
-        "Saudi Electricity: Contractor portal with NINTEX and Power BI",
-        "Saudi Air Navigation Services: Corporate website and internal business system",
-        "NCB Capital: Upgraded SharePoint 2010 to 2013 with NINTEX Workflows",
-        "STC Specialized: Internal portal with 50+ automated workflows"
-      ],
-      technologies: ["SharePoint 2016", "ASP.NET", "C#", "JavaScript", "jQuery", "NINTEX", "Crystal Reports", "Power BI"]
     }
   ];
 
   const selectedProjects = [
-    {
-      title: "EJADA Systems – Diriyah Gate Development Authority",
-      period: "Mar 2022 – Mar 2024",
-      role: "Technical Lead / Senior SharePoint Developer",
-      description: "Delivered SharePoint platforms serving 5,000+ users with role-based access and governance controls for the cultural heritage development authority.",
-      achievements: [
-        "Delivered SharePoint platforms serving 5,000+ users with role-based access",
-        "Automated 20+ business workflows using Power Automate and Power Apps",
-        "Improved content publishing efficiency by 35% through centralized CMS",
-        "Managed and maintained five SharePoint On-Premise 2019 systems"
-      ],
-      technologies: [".NET Framework", "C#", "ReactJS", "SharePoint 2019", "SharePoint Online", "Power Apps", "Power Automate", "Azure Services"]
-    },
-    {
-      title: "STCPay (via EJADA Systems)",
-      period: "Jan 2020 – Feb 2022",
-      role: "Senior Software Engineer",
-      description: "Led development of core banking REST APIs serving mobile apps and merchant portals for STCPay's multi-channel platform serving 8M+ users.",
-      achievements: [
-        "Led development of core banking REST APIs serving mobile apps and merchant portals",
-        "Designed and optimized SQL Server databases and stored procedures",
-        "Implemented business logic using CSLA .NET framework",
-        "Managed integrations with governmental entities ensuring secure data exchange"
-      ],
-      technologies: [".NET Framework", "C#", "SQL Server", "REST API", "SOAP", "CSLA Framework"]
-    },
     {
       title: "WCA34 – SharePoint Online Modern Intranet Portal",
       period: "Oct 2025 – Feb 2026",
@@ -127,7 +52,7 @@ const Home = () => {
       technologies: ["SharePoint 2019", "SharePoint SE", "DGA Compliance", "Publishing Portal"]
     },
     {
-      title: "Diriyah Gate Development Authority",
+      title: "Diriyah Gate Development Authority (DGDA)",
       period: "Mar 2022 – Mar 2024",
       role: "Technical Lead",
       description: "Comprehensive SharePoint ecosystem management and custom solution development for the cultural heritage development authority.",
@@ -138,16 +63,23 @@ const Home = () => {
         "Managed five SharePoint On-Premise 2019 systems"
       ],
       technologies: [".NET Framework", "SharePoint 2019", "SharePoint Online", "Power Apps", "Power Automate", "Azure"]
+    },
+    {
+      title: "STC Pay Core Banking Integration",
+      period: "Jan 2020 – Feb 2022",
+      role: "Senior Software Engineer",
+      description: "Led development of core banking REST APIs serving mobile apps and merchant portals for STC Pay's multi-channel platform serving 8M+ users.",
+      achievements: [
+        "Led development of core banking REST APIs serving mobile apps and merchant portals",
+        "Designed and optimized SQL Server databases and stored procedures",
+        "Implemented business logic using CSLA .NET framework",
+        "Managed integrations with governmental entities ensuring secure data exchange"
+      ],
+      technologies: [".NET Framework", "C#", "SQL Server", "REST API", "SOAP", "CSLA Framework"]
     }
   ];
 
   const otherProjects = [
-    {
-      title: "STCPay Core Banking Services",
-      period: "Jan 2020 – Feb 2022",
-      description: "Core banking REST APIs for mobile apps and merchant portals.",
-      technologies: [".NET Framework", "C#", "SQL Server", "REST API", "CSLA"]
-    },
     {
       title: "Saudi Ministry of Energy Portal",
       period: "Apr 2019 – Dec 2019",
@@ -171,6 +103,12 @@ const Home = () => {
       period: "Aug 2018 – Oct 2018",
       description: "SharePoint platform upgrade from 2010 to 2013 with new authentication.",
       technologies: ["SharePoint 2013", "ASP.NET", "C#", "NINTEX"]
+    },
+    {
+      title: "DDS Program for Saudi Air Navigation",
+      period: "Jun 2018 – Aug 2018",
+      description: "Custom tracking system for meetings, attendance, and KPIs across multiple departments.",
+      technologies: ["SharePoint Online", "JavaScript", "jQuery", "HTML"]
     },
     {
       title: "STC Specialized Internal Portal",
@@ -287,7 +225,7 @@ const Home = () => {
           <div className="mb-6 animate-fade-in">
             <div className="w-28 h-28 md:w-32 md:h-32 mx-auto mb-4 rounded-full overflow-hidden shadow-2xl border-4 border-blue-400">
               <img 
-                src="/lovable-uploads/b4b6eadd-d88a-4653-8c5e-2f4b54d09fbf.png" 
+                src="/profile.png" 
                 alt="Zeyad Elmaghraby" 
                 className="w-full h-full object-cover"
               />
@@ -674,7 +612,7 @@ const Home = () => {
                 <Phone className="w-6 h-6 text-blue-400 mx-auto mb-2" />
                 <p className="text-slate-300 text-sm">(+20) 1009364302</p>
               </a>
-              <a href="https://linkedin.com/in/zeyad-elmaghraby" target="_blank" rel="noopener noreferrer" className="bg-slate-800 border border-slate-700 rounded-lg p-4 hover:border-blue-500 transition-all text-center">
+              <a href="https://www.linkedin.com/in/zeyad-elmaghraby-068567b2/" target="_blank" rel="noopener noreferrer" className="bg-slate-800 border border-slate-700 rounded-lg p-4 hover:border-blue-500 transition-all text-center">
                 <Linkedin className="w-6 h-6 text-blue-400 mx-auto mb-2" />
                 <p className="text-slate-300 text-sm">LinkedIn Profile</p>
               </a>

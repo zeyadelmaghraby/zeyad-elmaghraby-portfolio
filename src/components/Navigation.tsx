@@ -34,7 +34,7 @@ export const Navigation = () => {
             className="flex items-center gap-3 hover:opacity-80 transition-opacity"
           >
             <Avatar className="w-10 h-10">
-              <AvatarImage src="/lovable-uploads/b4b6eadd-d88a-4653-8c5e-2f4b54d09fbf.png" alt="Zeyad Elmaghraby" />
+              <AvatarImage src="/profile.png" alt="Zeyad Elmaghraby" />
               <AvatarFallback className="bg-blue-600 text-white font-bold">ZE</AvatarFallback>
             </Avatar>
             <span className="text-xl font-bold text-blue-400 hover:text-blue-300 transition-colors">
