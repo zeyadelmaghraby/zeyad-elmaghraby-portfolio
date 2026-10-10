@@ -1,11 +1,14 @@
 
 import { useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { pathname } = useLocation();
+  const navigate = useNavigate();
   const profileImage = `${import.meta.env.BASE_URL}profile.png`;
 
   const navItems = [
@@ -19,10 +22,15 @@ export const Navigation = () => {
   ];
 
   const scrollToSection = (sectionId: string) => {
+    setIsOpen(false); // Close mobile menu after clicking
+    if (pathname !== "/") {
+      // Sections live on the home page; ScrollManager scrolls once it renders
+      navigate(`/#${sectionId}`);
+      return;
+    }
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
-      setIsOpen(false); // Close mobile menu after clicking
     }
   };
 

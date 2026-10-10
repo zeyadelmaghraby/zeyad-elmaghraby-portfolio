@@ -5,6 +5,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Navigation } from "@/components/Navigation";
+import { ScrollManager } from "@/components/ScrollManager";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Experience from "./pages/Experience";
@@ -12,6 +13,7 @@ import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 import Certifications from "./pages/Certifications";
 import Contact from "./pages/Contact";
+import ProjectDetail from "./pages/ProjectDetail";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -23,9 +25,11 @@ const App = () => (
       <Sonner />
       <BrowserRouter basename={import.meta.env.BASE_URL}>
         <div className="min-h-screen bg-slate-900 text-white">
+          <ScrollManager />
           <Navigation />
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/projects/:slug" element={<ProjectDetail />} />
             {/* <Route path="/about" element={<About />} />
             <Route path="/experience" element={<Experience />} />
             <Route path="/projects" element={<Projects />} />

@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { CaseStudyCard } from "@/components/case-study/CaseStudyCard";
+import { caseStudies } from "@/data/caseStudies";
 import { ArrowDown, Download, Mail, Calendar, MapPin, Building, Award, Code, Database, Cloud, Monitor, Smartphone, Globe, Phone, Linkedin, GraduationCap, Users, Briefcase } from "lucide-react";
 
 const Home = () => {
@@ -425,6 +427,16 @@ const Home = () => {
               <p className="text-lg text-slate-300 max-w-3xl mx-auto">
                 Selected enterprise projects delivered across government and private sectors
               </p>
+            </div>
+
+            {/* Featured Case Studies */}
+            <div className="mb-12">
+              <h3 className="text-xl font-bold text-white mb-6">Featured Case Studies</h3>
+              <div className="grid gap-6">
+                {caseStudies.map((study) => (
+                  <CaseStudyCard key={study.slug} study={study} />
+                ))}
+              </div>
             </div>
 
             {/* Selected Projects */}
